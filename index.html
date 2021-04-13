@@ -7,8 +7,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/3c9d0da18a.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 </head>
@@ -34,67 +33,98 @@
   </header>
   <main>
     <section class="section-cta">
-      <div class="container">
+      <div class="container d-flex">
         <div class="cta-primary">
-          <h1 class="cta-title">All your files in one secure location, accessible anywhere.</h1>
+          <h1 class="section-title">All your files in one secure location, accessible anywhere.</h1>
           <p>Fylo stores your most important files in one secure location.
             Access them wherever you need, share and collaborate with friends,
             family, and co-workers.</p>
-            <form class="cta-form">
-              <input type="email" required /> 
-              <input class="cta-btn" type="submit" value="Get Started">
-            </form>
+          <form class="cta-form">
+            <input class="cta-input" type="email" required placeholder="Enter your email..."/>
+            <input class="cta-btn" type="submit" value="Get Started">
+          </form>
         </div>
-        <img src="./images/illustration-1.svg" alt="a huge file, a man and a woman inserting documents into it">
+        <img class="cta-img"  src="./images/illustration-1.svg" alt="a huge file, a man and a woman inserting documents into it">
       </div>
     </section>
-    <div class="curved-line-img">
-      <img src="./images/bg-curve-mobile.svg" alt="curved line background">
-    </div>
+    
+    <img src="./images/bg-curve-mobile.svg" alt="">
+    
+    <section class="section-testimonial">
+      <div class="container d-flex">
+        <div class="testimonial-primary">
+          <h1 class="section-title">Stay productive, wherever you are</h1>
+          <p>Never let location be an issue when accessing your files. Fylo has you
+            covered for all of your file storage needs.</p>
+          <p>Securely share files and folders with friends, family and colleagues for
+            live collaboration. No email attachments required!</p>
+          <a href="#" class="testimonial-link">See how Fylo works</a>
+          <div class="testimonial-card">
+            <img src="./images/icon-quotes.svg" alt="quotes mark" class="quotes">
+            <p class="card-text">Fylo has improved our team productivity by an order of magnitude. Since
+              making the switch our team has become a well-oiled collaboration machine.</p>
+            <div class="d-flex">
+              <img src="./images/avatar-testimonial.jpg" alt="portrait of the founder of Fylo" class="avatar-img">
+              <div class="avatar-details">
+                <p class="avatar-name">Kyle Burton</p>
+                <p class="avatar-job-info">Founder & CEO, Huddle</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="./images/illustration-2.svg" alt="three workers holding big speech bubbles">
+      </div>
+    </section>
+
+    <Section class="section-cta-narrow">
+      <div class="container d-flex">
+        <div class="cta-narrow-primary">
+          <h2 class="cta-narrow-title">Get early access today</h2>
+          <p>It only takes a minute to sign up and our free starter tier is extremely generous.
+            If you have any questions, our support team would be happy to help you.</p>
+        </div>
+        <div class="cta-narrow-form">
+          <input class="cta-input" type="email" required placeholder="Enter your email..."/>
+          <input class="cta-btn" type="submit" value="Get Started For Free">
+        </div>
+      </div>
+    </Section>
   </main>
 
-
-  Stay productive, wherever you are
-
-  Never let location be an issue when accessing your files. Fylo has you
-  covered for all of your file storage needs.
-
-  Securely share files and folders with friends, family and colleagues for
-  live collaboration. No email attachments required!
-
-  See how Fylo works
-
-  Fylo has improved our team productivity by an order of magnitude. Since
-  making the switch our team has become a well-oiled collaboration machine.
-
-  Kyle Burton
-  Founder & CEO, Huddle
-
-  Get early access today
-
-  It only takes a minute to sign up and our free starter tier is extremely generous.
-  If you have any questions, our support team would be happy to help you.
-
-  Get Started For Free
-
-  Phone: +1-543-123-4567
-  example@fylo.com
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy
-
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+    <div class="container">
+      <img src="./images/logo.svg" alt="Fylo logo" class="footer-img">
+      <div class="d-flex">
+        <div class="col-1">
+
+          <p class="footer-text"><img src="./images/icon-phone.svg" alt="phone icon">Phone: +1-543-123-4567</p>
+
+          <p class="footer-text"><img src="./images/icon-email.svg" alt="email icon">example@fylo.com</p>
+        </div>
+        <div class="col-2">
+          <a href="#" class="footer-link">About Us</a>
+          <a href="#" class="footer-link">Jobs</a>
+          <a href="#" class="footer-link">Press</a>
+          <a href="#" class="footer-link">Blog</a>
+        </div>
+        <div class="col-3">
+          <a href="#" class="footer-link">Contact Us</a>
+          <a href="#" class="footer-link">Terms</a>
+          <a href="#" class="footer-link">Privacy</a>
+        </div>
+        <div class="col-4">
+          <a href="#" class="footer-link"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="footer-link"><i class="fab fa-twitter-square"></i></a>
+          <a href="#" class="footer-link"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Paweł Pikus</a>.
+      </p>
+    </div>
   </footer>
+
 </body>
 
 </html>
