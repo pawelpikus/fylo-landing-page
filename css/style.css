@@ -18,6 +18,9 @@
     --ff-cta: 'Raleway', sans-serif;
     --ff-body: 'Open Sans', sans-serif;
 
+    --fs-h1: 2rem;
+    --fs-h2: 1.2rem;
+
     --fw-regular: 400;
     --fw--bold: 700;
    
@@ -44,6 +47,14 @@ h2 {
     line-height: 1.5;
 }
 
+h1{
+    font-size: var(--fs-h1);
+}
+
+h2{
+    font-size: var(--fs-h2);
+}
+
 p{
     margin: 0 0 1.5em 0;
 }
@@ -51,6 +62,16 @@ p{
 img{
     display: block;
     max-width: 100%;
+}
+
+.curved-line-bg{
+    width: 100vw;
+}
+
+.testimonial-link{
+    color: var(--clr-accent-light);
+    margin: 0 auto;
+    text-decoration: none;
 }
 
 /* Layout */
@@ -70,17 +91,24 @@ section{
     padding: 5em 0;
 }
 
-.section-cta{
+.section-cta,
+.section-subtitle{
     text-align: center;
 }
 
 .section-testimonial{
     background-color: #F8F8FE;
+    color: var(--clr-primary-light);
 }
 
-.cta-img{
+.section-testimonial h2{
+    color: var(--clr-primary-dark);
+}
+
+.cta-img, 
+.testimonial-img{
     order: -1;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
 }
 
 footer{
@@ -92,11 +120,13 @@ footer{
 .cta-btn{
     display: inline-block;
     font-family: var(--ff-cta);
+    width: 90%;
+    max-width: 320px;
+    margin-bottom: 1.5em;
     padding: 1em 1.5em;
-    width: 320px;
     border: 1px solid var(--clr-primary-dark);
     border-radius: 3px;
-    margin-bottom: 1.5em;
+    
 }
 
 .cta-btn{
@@ -114,3 +144,4 @@ footer{
     opacity: .7;
 }
 
+/* testimonial card */
