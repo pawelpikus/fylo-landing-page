@@ -10,7 +10,7 @@
 :root{
     --clr-primary-light: #585870;
     --clr-primary-dark: #05041f;
-    --clr-accent-light: #3c6e65;
+    --clr-accent-light: #009468;
     --clr-accent-dark: #0a2f94;
     --clr-neutral-light: #bfbfbf;
     --clr-neutral-dark: #3e3efa;
@@ -18,7 +18,7 @@
     --ff-cta: 'Raleway', sans-serif;
     --ff-body: 'Open Sans', sans-serif;
 
-    --fs-h1: 2rem;
+    --fs-h1: 1.8rem;
     --fs-h2: 1.2rem;
 
     --fw-regular: 400;
@@ -56,7 +56,8 @@ h2{
 }
 
 p{
-    margin: 0 0 1.5em 0;
+    margin:0;
+    margin-bottom: 1em;
 }
 
 img{
@@ -68,11 +69,44 @@ img{
     width: 100vw;
 }
 
-.testimonial-link{
-    color: var(--clr-accent-light);
-    margin: 0 auto;
-    text-decoration: none;
+.testimonial-primary{
+    display: flex;
+    flex-direction: column;
 }
+
+a.testimonial-link{
+    color: var(--clr-accent-light);
+    text-decoration: none;
+    padding: .5em 0;
+    border-bottom: 1px solid var(--clr-accent-light);
+    margin: 0 auto 2em auto;
+    
+     
+}
+
+.testimonial-link::after{
+    content: "";
+    /* border: 1px solid magenta; */
+    
+    width: 1.5em;
+    height: 1.5em;
+    background: url(../images/icon-arrow.svg) no-repeat;
+    position: relative;
+    top: 6px;
+    left: 5px;
+    display: inline-block;
+    background-size:cover;
+      
+}
+
+.testimonial-link:focus,
+.testimonial-link:hover{
+    opacity: .6;
+    
+}
+
+
+
 
 /* Layout */
 .container {
@@ -111,6 +145,12 @@ section{
     margin-bottom: 4em;
 }
 
+.section-cta-narrow{
+    background-color: var(--clr-primary-light);
+    color: #FFF;
+    text-align: center;
+}
+
 footer{
     background-color: var(--clr-primary-dark);
 }
@@ -120,13 +160,17 @@ footer{
 .cta-btn{
     display: inline-block;
     font-family: var(--ff-cta);
-    width: 90%;
-    max-width: 320px;
+    width: 100%;
+    max-width: 375px;
     margin-bottom: 1.5em;
     padding: 1em 1.5em;
     border: 1px solid var(--clr-primary-dark);
     border-radius: 3px;
     
+}
+
+.cta-input{
+    margin-top: 1.5em
 }
 
 .cta-btn{
@@ -145,3 +189,47 @@ footer{
 }
 
 /* testimonial card */
+.testimonial-card{
+    background-color: #FFF;
+    width: 90%;
+    margin: 2em auto 0 auto;
+    padding: 1.5em 2em;
+    border-radius: 5px;
+    box-shadow: var(--bs);
+}
+
+.quotes{
+    height: 1em;
+    margin: .5em 0;
+    
+}
+
+.card-text{
+    font-size: .775rem;
+    line-height: 2;
+}
+
+.avatar-details{
+    padding-left: 1em;
+}
+
+.avatar-img{
+    max-width: 40px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.avatar-name{
+    font-size: .775rem;
+    font-weight: var(--fw--bold);
+    margin: 0;
+}
+
+.avatar-job-info{
+    font-size: .6rem;
+    margin: 0;
+}
+
+.card-flex{
+    flex-direction: row;
+}
