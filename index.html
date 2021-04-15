@@ -15,21 +15,22 @@
 
 <body>
   <header>
-    <div class="container">
+    <div class="container d-flex">
       <button class="nav-toggle" aria-label="toggle navigation">
         <span class="hamburger"></span>
       </button>
       <a href="#" class="logo">
-        <img src="./images/logo.svg" alt="Fylo landing page with two column layout">
+        <img class="logo-img" src="./images/logo.svg" alt="Fylo landing page with two column layout">
       </a>
-
-      <nav class="nav">
+    </div>
+    <nav class="nav">
+      <div class="container">
         <ul class="nav-list">
           <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Team</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Sign In</a></li>
         </ul>
-      </nav>
+    </nav>
     </div>
   </header>
   <main>
@@ -54,7 +55,7 @@
 
     <section class="section-testimonial">
       <div class="container d-flex">
-        <div class="testimonial-primary">
+        <div class="testimonial-primary d-flex">
           <h2 class="section-subtitle">Stay productive, wherever you are</h2>
           <p>Never let location be an issue when accessing your files. Fylo has you
             covered for all of your file storage needs.</p>
@@ -94,39 +95,39 @@
   </main>
 
   <footer>
-    <div class="container">
-      <img src="./images/logo.svg" alt="Fylo logo" class="footer-img">
-      <div class="d-flex">
-        <div class="col-1">
+    <div class="container d-flex">
+      <img src="./images/logo-white.svg" alt="Fylo logo" class="footer-img">
+      
+        <div class="col">
 
-          <p class="footer-text"><img src="./images/icon-phone.svg" alt="phone icon">Phone: +1-543-123-4567</p>
+          <p class="phone-number">Phone: +1-543-123-4567</p>
 
-          <p class="footer-text"><img src="./images/icon-email.svg" alt="email icon">example@fylo.com</p>
+          <p class="email">example@fylo.com</p>
         </div>
-        <div class="col-2">
+        <div class="col">
           <a href="#" class="footer-link">About Us</a>
           <a href="#" class="footer-link">Jobs</a>
           <a href="#" class="footer-link">Press</a>
           <a href="#" class="footer-link">Blog</a>
         </div>
-        <div class="col-3">
+        <div class="col">
           <a href="#" class="footer-link">Contact Us</a>
           <a href="#" class="footer-link">Terms</a>
           <a href="#" class="footer-link">Privacy</a>
         </div>
-        <div class="col-4">
+        <div class="col d-flex social-icons">
           <a href="#" class="footer-link"><i class="fab fa-facebook"></i></a>
           <a href="#" class="footer-link"><i class="fab fa-twitter-square"></i></a>
           <a href="#" class="footer-link"><i class="fab fa-instagram"></i></a>
         </div>
-      </div>
+      
       <p class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded by <a href="#">Paweł Pikus</a>.
       </p>
     </div>
   </footer>
-
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
