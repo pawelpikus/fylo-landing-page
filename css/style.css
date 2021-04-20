@@ -38,7 +38,7 @@ body{
 
 h1,
 h2 {
-    margin: 0 0 1em 0;
+    margin-bottom: 1em;
     font-weight: var(--fw--bold);
     font-family: var(--ff-body);
     line-height: 1.5;
@@ -356,8 +356,6 @@ footer{
     position: relative;
     top: 1.2em;
     background-size: cover;
-    margin-right: 1em;
-    
 }
 
 .phone-number::before{
@@ -378,6 +376,7 @@ footer{
 }
 
 .attribution{
+    margin: 0;
     font-size: .9rem;
     text-align: center;
     padding: 4em 0;
@@ -466,26 +465,35 @@ footer{
         margin-right: 1em;
     }
 
+@media (min-width: 1175px){
+    .cta-input{
+        width: 60%;
+    }
+    
     .input-wide{
         width: 100%;
     }
- 
+        
+}
 
-     /* footer */
+    /* footer */
     .col{
         display: flex;
         flex-direction: column;
         width: 25%;
         margin: 0;
         align-items: flex-start;
+        
     }
 
     .col + .col{
-        margin-left: 2em;
+        padding-left: 6rem;
     }
 
     .social-icons{
-        justify-content: space-evenly;
+        flex-direction: row;
+        justify-content:left ;
+        
     }
 
     .footer-img{
@@ -493,8 +501,4 @@ footer{
     }
 }
 
-@media (min-width: 1000px){
-    .cta-input{
-        width: 60%;
-    }
-}
+
