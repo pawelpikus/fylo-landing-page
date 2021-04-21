@@ -27,11 +27,8 @@ Users should be able to:
 
 ### Screenshots
 
-Mobile solution
-
 <img src="Fylo-mobile.png" alt="mobile solution" width="300px"/>
 
-Desktop solution
 <img src="fylo-desktop.png" alt="desktop solution" width="600px"/>
 
 ### Links
