@@ -29,7 +29,7 @@ Users should be able to:
 
 Mobile solution
 
-<img src="Fylo-mobile.png" alt="mobile solution" style="width:200px;"/>
+<img src="Fylo-mobile.png" alt="mobile solution" style="width:200px; height: 200px;"/>
 
 Desktop solution
 <img src="fylo-desktop.png" alt="desktop solution" style="width:200px;"/>
