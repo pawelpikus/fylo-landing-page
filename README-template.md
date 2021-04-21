@@ -6,7 +6,7 @@ This is a solution to the [Fylo landing page with two column layout challenge on
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -25,9 +25,13 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-### Screenshot
+### Screenshots
+
+Mobile solution
 
 <img src="Fylo-mobile.png" alt="mobile solution" style="width:200px;"/>
+
+Desktop solution
 <img src="fylo-desktop.png" alt="desktop solution" style="width:200px;"/>
 
 
