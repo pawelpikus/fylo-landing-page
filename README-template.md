@@ -47,7 +47,7 @@ Users should be able to:
 
 ### What I learned
 
-With this challenge I have trained and revised the concept of Responsive Web Design. I tried to push the requirements of this challenge a little bir further and build a fully responsive design. In particular: 
+With this challenge I trained the concept of Responsive Web Design. I tried to push the requirements of this challenge a little bir further and build a fully responsive design. To accomplish that, I used: 
 
 - the concept of desktop-first markup, putting content into semantic, logical chunks and laying it out with flexbox, whenever I could (flexbox rules!), e.g.:    
 
@@ -69,16 +69,43 @@ With this challenge I have trained and revised the concept of Responsive Web Des
       </div>
     </section>
 ```
+- using a combination of relative and absolute units in css for responsive layout, e.g.: 
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+or like this:
+
+```css
+.logo-img{
+    height: 40px;
+    margin-top: 1em;
+}
+
+.curved-line-bg{
+    width: 100vw;
 }
 ```
+
+- adding media queries to address wider screens, e.g.:
+
+```css
+@media (min-width: 800px) {
+
+    /* layout */
+    .d-flex{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+```
+
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
