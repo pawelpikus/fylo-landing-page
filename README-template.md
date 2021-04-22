@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution](https://github.com/pawelpikus/fylo-landing-page)
+- Live Site URL: [live site](https://pawelpikus.github.io/fylo-landing-page/)
 
 ## My process
 
@@ -43,22 +43,31 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+With this challenge I have trained and revised the concept of Responsive Web Design. I tried to push the requirements of this challenge a little bir further and build a fully responsive design. In particular: 
 
-To see how you can add code snippets, see below:
+- the concept of desktop-first markup, putting content into semantic, logical chunks and laying it out with flexbox, whenever I could (flexbox rules!), e.g.:    
 
-```html
-<h1>Some HTML code I'm proud of</h1>
+- ```html
+<section class="section section-cta">
+      <div class="container d-flex">
+        <div class="cta-primary">
+          <h1 class="section-title">All your files in one secure location, accessible anywhere.</h1>
+          <p>Fylo stores your most important files in one secure location.
+            Access them wherever you need, share and collaborate with friends,
+            family, and co-workers.</p>
+          <form class="cta-form">
+            <input class="cta-input" type="email" required placeholder="Enter your email...">
+            <input class="cta-btn" type="submit" value="Get Started">
+          </form>
+        </div>
+        <img class="cta-img" src="./images/illustration-1.svg"
+          alt="a huge file, a man and a woman inserting documents into it">
+      </div>
+    </section>
 ```
 ```css
 .proud-of-this-css {
@@ -70,11 +79,6 @@ const proudOfThisFunc = () => {
   console.log('🎉')
 }
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
