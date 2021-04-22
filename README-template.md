@@ -51,7 +51,7 @@ With this challenge I have trained and revised the concept of Responsive Web Des
 
 - the concept of desktop-first markup, putting content into semantic, logical chunks and laying it out with flexbox, whenever I could (flexbox rules!), e.g.:    
 
-- ```html
+```html
 <section class="section section-cta">
       <div class="container d-flex">
         <div class="cta-primary">
