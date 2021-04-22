@@ -118,9 +118,6 @@ I'm going to focus on more complex layouts, preferably using CSS Grid and then f
 
 - Website - [Paweł Pikus | Github](https://github.com/pawelpikus)
 - Frontend Mentor - [@pawelpikus](https://https://www.frontendmentor.io/profile/pawelpikus)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
