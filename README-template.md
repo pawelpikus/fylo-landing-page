@@ -47,7 +47,7 @@ Users should be able to:
 
 ### What I learned
 
-With this challenge I trained the concept of Responsive Web Design. I tried to push the requirements of this challenge a little bir further and build a fully responsive design. To accomplish that, I used: 
+With this challenge I trained the concept of Responsive Web Design. I tried to push the requirements of this challenge a little bit further and build a fully responsive design. To accomplish that, I used: 
 
 - the concept of desktop-first markup, putting content into semantic, logical chunks and laying it out with flexbox, whenever I could (flexbox rules!), e.g.:    
 
